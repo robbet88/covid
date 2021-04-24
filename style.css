@@ -1,0 +1,43 @@
+.nv 
+{
+  background: linear-gradient(to bottom right,#0081f6,#00ccff);
+}
+.head{
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+  background: linear-gradient(to top right,#0081f6,#00ccff);
+  overflow: hidden;
+}
+.ft{
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  background: linear-gradient(to bottom right,#0081f6,#00ccff);
+  overflow: hidden;
+  
+}
+.cvd
+{
+  font-size: 30px;
+  font-weight: bold;
+}
+.positif
+{
+  background: linear-gradient(to top right,#ff1515,#ff8500);
+}
+.sembuh
+{
+  background: linear-gradient(to top right,#0081f6,#00ccff);
+}
+.meninggal
+{
+  background: linear-gradient(to top right,#ff8700,#ffcd00);
+}
+.bj
+{
+  background: #009cf3;
+}
+.icn
+{
+  font-size: 45px;
+  color : #ffffff;
+}
