@@ -175,11 +175,11 @@ function balon(elemen){
 
       dv.remove();
 
-    }, 8000);
+    }, 5000);
 
     console.log(ukuran);
 
-  },200)
+  },150)
 
   
 
