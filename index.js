@@ -1,9 +1,9 @@
 $(document).ready(() => {
   //alert("ready to use");
-  tanggal();
   getApi();
   listProvinsi();
   getGlobals();
+  balon(bln);
 })
 function tanggal() {
   let w = new Date();
@@ -133,3 +133,55 @@ function filterProv(prov){
     }
   }); 
 }
+function balon(elemen){
+
+  setInterval(() => {
+
+    let ukuran = Math.floor(Math.random()*40);
+
+    ukuran = ukuran < 10 ? 10 : ukuran;
+
+    let g = Math.floor(Math.random()*4);
+
+    let posisi = Math.floor(Math.random()*95)
+
+    let wrn = ["#04cdff","#ff005f","#00ff38","#ffbc1a","#ffffff"]
+
+    let dv = document.createElement("div");
+
+    dv.style.width = ukuran +"px";
+
+    dv.style.height = ukuran +"px";
+
+    dv.style.borderRadius = "50%";
+
+    dv.style.background = wrn[g];
+
+    dv.style.position = "absolute";
+
+    dv.style.transition = "1s";
+
+    dv.style.zIndex = "-9999";
+
+    dv.style.left = posisi +"%";
+
+    dv.style.opacity = "50%";
+
+    dv.style.animation = "balon 5s linear";
+
+    elemen.appendChild(dv);
+
+    setTimeout(function() {
+
+      dv.remove();
+
+    }, 8000);
+
+    console.log(ukuran);
+
+  },200)
+
+  
+
+}
+
